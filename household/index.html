@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.0/css/all.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        a {
+            color: black;
+        }
+
+
+
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        header {
+            width: 100vw;
+            height: calc(100vh - 120px);
+            background-color: #faf7f3;
+            background-image: url(./household.png);
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            height: calc(100vh - 120px);
+            padding-left: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .header-left .logo {
+            width: 130px;
+            height: 75px;
+            padding-top: 35px;
+            background-color: #0f77ff;
+            text-align: center;
+            color: #ffffff;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            font-size: 20px;
+            margin-right: 70px;
+            text-transform: capitalize;
+        }
+
+        .header-left nav {
+            height: 75px;
+            display: flex;
+            justify-content: flex-start;
+            flex: 1;
+        }
+
+        .header-left nav ul {
+            height: 115px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .header-left nav li {
+            margin-right: 40px;
+        }
+
+        .header-left nav a {
+            font-size: 18px;
+            color: #636b75;
+        }
+
+        .header-center {
+            /* background-color: red; */
+            flex: 2;
+        }
+
+        .header-title {
+            color: #363637;
+            font-size: 48px;
+            text-transform: capitalize;
+        }
+
+        .header-form {
+            width: 590px;
+            height: 70px;
+            background-color: lightskyblue;
+            display: flex;
+            position: relative;
+            margin: 58px 0px 30px;
+        }
+
+        .header-form i {
+            position: absolute;
+            top: 50%;
+            left: 25px;
+            transform: translate(0, -50%);
+            color: #72767d;
+            font-size: 26px;
+        }
+
+        .header-form input {
+            display: inline-block;
+            height: 70px;
+            border: none;
+            color: #ffffff;
+        }
+
+        .header-form .inp {
+            box-sizing: border-box;
+            width: 400px;
+            padding-left: 65px;
+            background: white;
+        }
+
+        .header-form .btn {
+            width: 190px;
+            background-color: #0f77ff;
+        }
+
+        .header-message ul {
+            width: 590px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .header-message ul li {
+            height: 40px;
+            padding: 0 35px;
+            line-height: 40px;
+            border-radius: 20px;
+            background-color: #ffffff;
+            font-size: 16px;
+        }
+
+        .header-message a {
+            color: #a1a9b3;
+        }
+
+
+        footer {
+            width: 100vw;
+            height: 120px;
+            background-color: #ffffff;
+            box-shadow: -1px 0px 1px gray;
+        }
+
+        footer ul {
+            height: 120px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        footer a {
+            color: #a1a9b3;
+            font-size: 16px;
+        }
+
+        footer li:hover a {
+            color: #0f77ff;
+        }
+
+        footer a i {
+            display: inline-block;
+            font-size: 32px;
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width:600px) {
+
+            .header-left {
+                padding-left: 30px;
+            }
+
+            .header-form {
+                width: 400px;
+                height: 190px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                position: relative;
+                padding-top: 30px;
+            }
+
+            .header-form i {
+                position: absolute;
+                top: 35px;
+            }
+
+            .header-message ul {
+                width: 400px;
+            }
+
+            .header-message ul li {
+                height: 80px;
+            }
+
+
+            footer ul {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <nav class="nav">
+                <div class="logo">household</div>
+                <ul>
+                    <li><a href=""> 首页 </a></li>
+                    <li><a href=""> 关于 </a></li>
+                    <li><a href=""> 联系 </a></li>
+                    <li><a href=""> 登陆 </a></li>
+                    <li><a href=""> 注册 </a></li>
+                    <li><a href=""> 帮助 </a></li>
+                </ul>
+            </nav>
+            <div class="header-center">
+                <h1 class="header-title">
+                    Lorem ipsum dolor sit amet <br />
+                    consectetur adipisicing elwer
+                </h1>
+                <form action="" class="header-form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="请输入你要搜索的内容" class="inp" />
+                    <input type="button" value="搜索" class="btn" />
+                </form>
+                <div class="header-message">
+                    <ul>
+                        <li><a href="">
+                                座椅
+                            </a></li>
+                        <li><a href="">
+                                床
+                            </a></li>
+                        <li><a href="">
+                                窗帘
+                            </a></li>
+                        <li><a href="">
+                                灯饰
+                            </a></li>
+                        <li><a href="">
+                                ...
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-right"></div>
+    </header>
+    <footer>
+        <ul>
+            <li><a href="">
+                    <i class="fa-solid fa-house"></i>
+                    首页
+                </a></li>
+            <li><a href="">
+                    <i class="fa-brands fa-salesforce"></i>
+                    分类
+                </a></li>
+            <li><a href="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    购物
+                </a></li>
+            <li><a href="">
+                    <i class="fa-solid fa-square-share-nodes"></i>
+                    分享
+                </a></li>
+            <li><a href="">
+                    <i class="fa-solid fa-flag"></i>
+                    直播
+                </a></li>
+            <li><a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                    社交
+                </a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

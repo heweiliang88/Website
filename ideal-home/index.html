@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>理想家</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- font：https://fonts.google.com/ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Reem+Kufi+Fun:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <header class="header" id="header" data-header>
+    <div class="container">
+      <a href="#header" class="logo">
+        <ion-icon name="home"></ion-icon> 理想家
+      </a>
+      <nav class="container navbar" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="#top" class="navbar-link" data-nav-link>首页</a>
+          </li>
+          <li>
+            <a href="#hero" class="navbar-link" data-nav-link>房源</a>
+          </li>
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>介绍</a>
+          </li>
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>关于</a>
+          </li>
+          <li>
+            <a href="#property" class="navbar-link" data-nav-link>户型</a></a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>联系</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="btn btn-secondary">登入</a>
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+      </button>
+    </div>
+  </header>
+  <main>
+    <article class="article">
+      <section class="section hero" aria-label="hero">
+        <div class="container">
+          <div class="hero-bg">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                找到你理想中<br>
+                <span class="span">最棒</span> 的家
+              </h1>
+              <p class="hero-text">
+                　有故事的房，花心思的家
+              </p>
+            </div>
+          </div>
+          <div class="hero-form-wrapper">
+            <div class="form-tab">
+              <button class="tab-btn active" data-tab-btn>购买</button>
+              <button class="tab-btn" data-tab-btn>出售</button></button>
+              <button class="tab-btn" data-tab-btn>最近交易</button>
+            </div>
+            <form action="" class="hero-form">
+              <div class="input-wrapper">
+                <label for="search" class="input-label">搜索 : *</label>
+                <input type="search" name="search" id="search" placeholder="搜索房源地址" required
+                  class="input-field">
+                <ion-icon name="search-outline"></ion-icon>
+              </div>
+              <div class="input-wrapper">
+                <label for="category" class="input-label">分类:</label>
+                <select name="category" id="category" class="dropdown-list">
+                  <option value="house">房子</option>
+                  <option value="apartment">店铺</option>
+                  <option value="offices">办公室</option>
+                  <option value="townhome">公寓</option>
+                </select>
+              </div>
+              <div class="input-wrapper">
+                <label for="min-price" class="input-label">最低预算
+              （W） :</label>
+                <select name="min-price" id="min-price" class="dropdown-list">
+                  <option value="min price">最低预算</option>
+                    <option value="30">30W</option>
+                  <option value="50">50W</option>
+                  <option value="100">100W</option>
+                  <option value="200">200W</option>
+                  <option value="300">300W</option>
+                  <option value="400">400W</option>
+                  <option value="500">500W</option>
+                  <option value="600">600W</option>
+                  <option value="1000">1000W</option>
+                </select>
+              </div>
+              <div class="input-wrapper">
+                <label for="max-price" class="input-label">最高预算(W):</label>
+                <select name="max-price" id="max-price" class="dropdown-list">
+                  <option value="max price">最高预算</option>
+                  <option value="50">50W</option>
+                  <option value="100">100W</option>
+                  <option value="200">200W</option>
+                  <option value="300">300W</option>
+                  <option value="400">400W</option>
+                  <option value="500">500W</option>
+                  <option value="600">600W</option>
+                  <option value="1000">1000W</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">搜索</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+          <div class="about-banner img-holder" style="--width: 600; --height: 700;">
+            <img src="./assets/images/about-banner.jpg" width="600" height="700" loading="lazy" alt="about banner"
+              class="img-cover">
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+          <div class="about-content">
+            <h2 class="h2 section-title">便利！优惠！升值！</h2>
+            <p class="section-text">
+              优质房源，最好的中介
+            </p>
+            <a href="#" class="btn btn-primary">了解更多</a></a>
+          </div>
+        </div>
+      </section>
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+          <h2 class="h2 section-title">优势</h2>
+          <p class="section-text">
+            我们的优势
+          </p>
+          <ul class="service-list">
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">便利</h3>
+                <p class="card-text">
+                每个人心里，都住着这么一个人，遥远的爱着。这辈子也许都无法在一起，也许都没有说过几句话，也没有一起吃饭看电影，可就是这个遥远的人支撑了青春里最重要，最灿烂的那些日子。以至于让以后的我们想起来，都没有遗憾后悔，只是暖暖的回忆。
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">理想</h3>
+                <p class="card-text">
+                      每个人心里，都住着这么一个人，遥远的爱着。这辈子也许都无法在一起，也许都没有说过几句话，也没有一起吃饭看电影，可就是这个遥远的人支撑了青春里最重要，最灿烂的那些日子。以至于让以后的我们想起来，都没有遗憾后悔，只是暖暖的回忆。
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="key"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">专业</h3>
+                <p class="card-text">
+                      每个人心里，都住着这么一个人，遥远的爱着。这辈子也许都无法在一起，也许都没有说过几句话，也没有一起吃饭看电影，可就是这个遥远的人支撑了青春里最重要，最灿烂的那些日子。以至于让以后的我们想起来，都没有遗憾后悔，只是暖暖的回忆。
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section property" id="property" aria-label="property">
+        <div class="container">
+          <h2 class="h2 section-title">热门户型</h2>
+          <p class="section-text">
+            最热门的户型号
+          </p>
+          <ul class="property-list">
+            <li>
+              <div class="property-card">
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/property-1.jpg" width="800" height="533" loading="lazy"
+                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                </figure>
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                    湖南省常德市青年东路
+                    </a>
+                  </h3>
+                  <ul class="card-list">
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">8000平方</span>
+                    </li>
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">120米</span>
+                    </li>
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">4 房</span>
+                    </li>
+                  </ul>
+                  <div class="card-meta">
+                    <div>
+                      <span class="meta-title">价格</span>
+                      <span class="meta-text">5000元</span>
+                    </div>
+                    <div>
+                      <span class="meta-title">评分</span>
+                      <span class="meta-text">
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <span>5.0(30)</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="property-card">
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/property-2.jpg" width="800" height="533" loading="lazy"
+                    alt="59345 STONEWALL DR, Plaquemine, LA 70764, USA" class="img-cover">
+                </figure>
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">北京朝阳区定福庄东街一号</a>
+                  </h3>
+                  <ul class="card-list">
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">8000平方</span>
+                    </li>
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">120米</span>
+                    </li>
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">4 房</span>
+                    </li>
+                  </ul>
+                  <div class="card-meta">
+                    <div>
+                      <span class="meta-title">价格</span>
+                      <span class="meta-text">5000元</span>
+                    </div>
+                    <div>
+                      <span class="meta-title">评分</span>
+                      <span class="meta-text">
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <span>5.0(30)</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="property-card">
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/property-3.jpg" width="800" height="533" loading="lazy"
+                    alt="3723 SANDBAR DR, Addis, LA 70710, USA" class="img-cover">
+                </figure>
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">长春市合隆经济开发区景苑路1号</a>
+                  </h3>
+                  <ul class="card-list">
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">8000平方</span>
+                    </li>
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">120米</span>
+                    </li>
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">4 房</span>
+                    </li>
+                  </ul>
+                  <div class="card-meta">
+                    <div>
+                      <span class="meta-title">价格</span>
+                      <span class="meta-text">5000元</span>
+                    </div>
+                    <div>
+                      <span class="meta-title">评分</span>
+                      <span class="meta-text">
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <span>5.0(30)</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="property-card">
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/property-4.jpg" width="800" height="533" loading="lazy"
+                    alt="贵州省贵阳市云岩区蔡关路1号贵州理工学院" class="img-cover">
+                </figure>
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">贵州省贵阳市云岩区蔡关路1号贵州理工学院</a>
+                  </h3>
+                  <ul class="card-list">
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">8000平方</span>
+                    </li>
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">120米</span>
+                    </li>
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">4 房</span>
+                    </li>
+                  </ul>
+                  <div class="card-meta">
+                    <div>
+                      <span class="meta-title">价格</span>
+                      <span class="meta-text">5000元</span>
+                    </div>
+                    <div>
+                      <span class="meta-title">评分</span>
+                      <span class="meta-text">
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <span>5.0(30)</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="property-card">
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/property-5.jpg" width="800" height="533" loading="lazy"
+                    alt="河北省邯郸市诸河路141号" class="img-cover">
+                </figure>
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">河北省邯郸市诸河路141号</a>
+                  </h3>
+                  <ul class="card-list">
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">8000平方</span>
+                    </li>
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">120米</span>
+                    </li>
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">4 房</span>
+                    </li>
+                  </ul>
+                  <div class="card-meta">
+                    <div>
+                      <span class="meta-title">价格</span>
+                      <span class="meta-text">5000元</span>
+                    </div>
+                    <div>
+                      <span class="meta-title">评分</span>
+                      <span class="meta-text">
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <span>5.0(30)</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="property-card">
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                  <img src="./assets/images/property-6.jpg" width="800" height="533" loading="lazy"
+                    alt="黑龙江省哈尔滨市松北区松浦路297号" class="img-cover">
+                </figure>
+                <button class="card-action-btn" aria-label="add to favourite">
+                  <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">黑龙江省哈尔滨市松北区松浦路297号</a>
+                  </h3>
+                  <ul class="card-list">
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="cube-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">8000平方</span>
+                    </li>
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="bed-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">120米</span>
+                    </li>
+                    <li class="card-item">
+                      <div class="item-icon">
+                        <ion-icon name="man-outline"></ion-icon>
+                      </div>
+                      <span class="item-text">4 房</span>
+                    </li>
+                  </ul>
+                  <div class="card-meta">
+                    <div>
+                      <span class="meta-title">价格</span>
+                      <span class="meta-text">5000元</span>
+                    </div>
+                    <div>
+                      <span class="meta-title">评分</span>
+                      <span class="meta-text">
+                        <div class="rating-wrapper">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                        <span>5.0(30)</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+          <h2 class="h2 section-title">如果您有任何问题？欢迎致电！</h2>
+          <p class="section-text">
+            别不信，确实有这房，别不买，机会很难得，别嫌贵，其实很便宜。
+          </p>
+          <button class="btn btn-primary">
+            <ion-icon name="call-outline"></ion-icon>
+            <span class="span">联系我们</span>
+          </button>
+        </div>
+      </section>
+      <section class="newsletter" aria-label="newsletter">
+        <div class="container">
+          <div class="wrapper">
+            <h2 class="h2 section-title">联系我们</h2>
+            <p class="section-text">提交您的电子邮件，我们将在稍后联系您</p>
+          </div>
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="输入您的电子邮件:" aria-label="Enter your email" required
+              class="email-field">
+            <button type="submit" class="btn btn-secondary">提交</button></button>
+          </form>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <ion-icon name="home"></ion-icon> 理想家
+          </a>
+          <p class="footer-text">
+            诗意栖息地，典型生活家
+          </p>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">团队</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+              <span class="span">关于我们</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+              <span class="span">服务</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+              <span class="span">资费</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+              <span class="span">博客</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+              <span class="span">登入</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">友情链接</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+              <span class="span">团队介绍</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+              <span class="span">业务服务</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+              <span class="span">团队优势</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+              <span class="span">联系我们</span></span>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">联系方式</p>
+          </li>
+          <li class="footer-item">
+            <ion-icon name="location-outline"></ion-icon>
+            <address class="address">
+              天津市西青区宾水西道399号
+              <a href="#" class="address-link">广东广州</a>
+            </address>
+          </li>
+          <li class="footer-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:contact@example.com" class="footer-link">xxx@163.com</a>
+          </li>
+          <li class="footer-item">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="tel:+158xxxxxxxxx" class="footer-link">+(86) 158 xxx-xxx-xxx</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2022. All Right Reserved by <a href="#" class="copyright-link">陆零陆开发团队</a>.
+        </p>
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-wechat"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+  <script src="./assets/js/script.js" defer></script>
+  <!-- ionicons： https://ionic.io/ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <!-- bootstrap -->
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

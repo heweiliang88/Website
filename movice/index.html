@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png">
+  <title>六藤动漫</title>
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/media_query.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="navbar">
+        <button class="navbar-menu-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+        <a href="#" class="navbar-brand">
+          <h2>六藤动漫</h2>
+        </a>
+        <nav class="">
+          <ul class="navbar-navigator">
+            <li> <a href="#" class="navbar-link">主页</a> </li>
+               <li> <a href="#" class="navbar-link">电影</a></a> </li>
+            <li> <a href="#category" class="navbar-link">分类</a> </li>
+            <li> <a href="#live" class="navbar-link indicator">直播</a> </li>
+          </ul>
+        </nav>
+        <!--
+          - search and sign-in
+        -->
+        <div class="navbar-actions">
+          <form action="#" class="navbar-form">
+            <input type="text" name="search" placeholder="输入搜索关键字" class="navbar-form-search">
+            <button class="navbar-form-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+            <button class="navbar-form-close">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </button>
+          </form>
+          <!--
+            - search button for small screen
+          -->
+          <button class="navbar-search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          <a href="#" class="navbar-signin">
+            <span>登入</span>
+            <ion-icon name="log-in-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="banner-card">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/images/banner.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/banner2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/banner3.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--
+        - #MOVIES SECTION
+      -->
+      <section class="movies">
+        <!--
+          - filter bar
+        -->
+        <div class="filter-bar">
+          <div class="filter-dropdowns">
+            <select name="genre" class="genre">
+              <option value="all genres">所有分类</option>
+              <option value="action">动作片</option>
+              <option value="adventure">冒险片</option>
+              <option value="animal">纪录片</option>
+              <option value="animation">动画</option>
+              <option value="biography">综艺</option>
+            </select>
+            <select name="year" class="year">
+              <option value="all years">所有年份</option>
+              <option value="2022">2022</option>
+              <option value="2020-2021">2020-2021</option>
+              <option value="2010-2019">2010-2019</option>
+              <option value="2000-2009">2000-2009</option>
+              <option value="1980-1999">1980-1999</option>
+            </select>
+          </div>
+          <div class="filter-radios">
+            <input type="radio" name="grade" id="featured" checked>
+            <label for="featured">近期</label></label></label>
+            <input type="radio" name="grade" id="popular">
+            <label for="popular">热门</label>
+            <input type="radio" name="grade" id="newest">
+            <label for="newest">最新</label>
+            <div class="checked-radio-bg"></div>
+          </div>
+        </div>
+        <!--
+          - movies grid
+        -->
+        <div class="movies-grid">
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/yourname.jpg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.4</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">你的名字</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/weather.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>7.4</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">天气之子</h3>
+              <div class="card-info">
+                <span class="gFenre">动画</span>
+                <span class="year">2017</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/voice.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>N/A</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">声之形</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/cat.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.8</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">她和她的猫</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets//images/movies/tower.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <xion-icon name="bookmark-outline"></xion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.2</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">哈尔的移动城堡</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/clound.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.3</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">云的彼端，约定的地方</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2019</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/crossing.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>7.6</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">十字路口</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/dragoncat.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.0</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">龙猫</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2006</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/fish.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>9.0</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">大鱼海棠</h3>
+              <div class="card-info">
+                <span class="genre">动画</span></span>
+                <span class="year">2008</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/fivecm.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>7.3</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">秒速5厘米</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2018</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/girl.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.7</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">岸上的波妞</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2018</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/hag.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.9</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">魔女宅急便</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2003</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/leaf.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.6</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">言叶之庭</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">1998</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/ring.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.6</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">铃芽户缔</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2014</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/skycity.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.5</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">天空之城</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2000</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/snake.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.4</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">白蛇</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2019</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/star.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>5.4</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">追逐繁星的孩子</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="card-head">
+              <img src="./assets/images/movies/thousand.jpeg" alt="" class="card-img">
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.8</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">千与千寻</h3>
+              <div class="card-info">
+                <span class="genre">动画</span>
+                <span class="year">2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
+          - load more button
+        -->
+        <button class="load-more">加载更多</button>
+      </section>
+      <!--
+        - #CATEGORY SECTION
+      -->
+      <section class="category" id="category">
+        <h2 class="section-heading">分类</h2>
+        <div class="category-grid">
+          <div class="category-card">
+            <img src="./assets/images/classify.jpeg" alt="" class="card-img">
+            <div class="name">国产</div>
+            <div class="total">100</div>
+          </div>
+          <div class="category-card">
+            <img src="./assets/images/classify.jpeg" alt="" class="card-img">
+            <div class="name">韩国</div>
+            <div class="total">50</div>
+          </div>
+          <div class="category-card">
+            <img src="./assets/images/classify.jpeg" alt="" class="card-img">
+            <div class="name">日本</div>
+            <div class="total">20</div>
+          </div>
+          <div class="category-card">
+            <img src="./assets/images/classify.jpeg" alt="" class="card-img">
+            <div class="name">
+              美国
+            </div>
+            <div class="total">80</div>
+          </div>
+          <div class="category-card">
+            <img src="./assets/images/classify.jpeg" alt="" class="card-img">
+            <div class="name">
+              热血
+            </div>
+            <div class="total">100</div>
+          </div>
+          <div class="category-card">
+            <img src="./assets/images/classify.jpeg" alt="" class="card-img">
+            <div class="name">
+              后宫
+            </div>
+            <div class="total">50</div>
+          </div>
+          <div class="category-card">
+            <img src="./assets/images/classify.jpeg" alt="" class="card-img">
+            <div class="name">
+              机甲
+            </div>
+            <div class="total">20</div>
+          </div>
+          <div class="category-card">
+            <img src="./assets/images/classify.jpeg" alt="" class="card-img">
+            <div class="name">
+              剧场
+            </div>
+            <div class="total">80</div>
+          </div>
+        </div>
+      </section>
+      <!--
+        - #LIVE SECTION
+      -->
+      <section class="live" id="live">
+        <h2 class="section-heading">直播</h2>
+        <div class="live-grid">
+          <div class="live-card">
+            <div class="card-head">
+              <img src="./assets/images/cctv.png" alt="" class="card-img">
+              <div class="live-badge">直播</div>
+              <div class="total-viewers">3K </div>
+              <div class="play">
+                <ion-icon name="play-circle-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="card-body">
+              <img src="./assets/images/cctv.png" alt="" class="avatar">
+              <h3 class="card-title">新海诚动漫直播</h3>
+            </div>
+          </div>
+          <div class="live-card">
+            <div class="card-head">
+              <img src="./assets/images/tv.jpeg" alt="" class="card-img">
+              <div class="live-badge">直播</div>
+              <div class="total-viewers">1.7K</div>
+              <div class="play">
+                <ion-icon name="play-circle-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="card-body">
+              <img src="./assets/images/HBO-Logo-square.jpg" alt="" class="avatar">
+              <h3 class="card-title">
+                宫崎骏动漫直播
+              </h3>
+            </div>
+          </div>
+          <div class="live-card">
+            <div class="card-head">
+              <img src="./assets/images/tv.jpeg" alt="" class="card-img">
+              <div class="live-badge">直播</div>
+              <div class="total-viewers">1.2K</div>
+              <div class="play">
+                <ion-icon name="play-circle-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="card-body">
+              <img src="./assets/images/HBO-Logo-square.jpg" alt="" class="avatar">
+              <h3 class="card-title">
+                国产动漫直播
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>六藤动漫</h2>
+          <p class="slogan">一个动漫主题的视频网站
+          </p>
+          <div class="social-link">
+             <a href="#">
+               <ion-icon name="logo-wechat"></ion-icon>
+             </a>
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <h4 class="link-heading">关于</h4>
+            <li class="link-item"><a href="#">关于我们</a></li>
+            <li class="link-item"><a href="#">团队</a></a></li>
+            <li class="link-item"><a href="#">计划</a></li>
+            <li class="link-item"><a href="#">联系我们</a></li>
+          </ul>
+          <ul>
+            <h4 class="link-heading">浏览</h4>
+            <li class="link-item"><a href="#">动画</a></li>
+            <li class="link-item"><a href="#">纪录片</a></li>
+            <li class="link-item"><a href="#">新闻</a></li>
+            <li class="link-item"><a href="#">综艺</a></li>
+          </ul>
+          <ul>
+              <h4 class="link-heading">资讯</h4>
+            <li class="link-item"><a href="#">电视直播</a></li>
+            <li class="link-item"><a href="#">电影</a></li>
+            <li class="link-item"><a href="#">动画</a></li>
+            <li class="link-item"><a href="#">综艺</a></li>
+          </ul>
+          <ul>
+            <h4 class="link-heading">帮助</h4>
+            <li class="link-item"><a href="#">账号</a></li>
+            <li class="link-item"><a href="#">计划</a></li>
+            <li class="link-item"><a href="#">技术支持</a></li>
+            <li class="link-item"><a href="#">账号</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="copyright">
+          <p>&copy; copyright 2021 606团队</p>
+        </div>
+        <div class="wrapper">
+          <a href="#">资费情况</a>
+          <a href="#">联系团队</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./assets/js/main.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+  </script>
+</body>
+</html>

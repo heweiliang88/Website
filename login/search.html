@@ -1,0 +1,77 @@
+---
+abbrlink: 65043
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(0px, -100px);
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: pink;
+        }
+
+        .search h1 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .searchtext {
+            width: 300px;
+            padding: 12px 20px;
+            outline: none;
+            border-radius: 20px 0px 0px 20px;
+            font-size: 20px;
+            display: inline-block;
+            box-sizing: border-box;
+
+            float: left;
+
+        }
+
+        .searchbtn {
+            width: 150px;
+            display: inline-block;
+            padding: 12px 5px;
+            font-size: 20px;
+            box-sizing: border-box;
+
+            color: white;
+            border-radius: 0px 20px 20px 0px;
+            background-color: rgba(204, 118, 6, 0.829);
+            cursor: pointer;
+            outline: none;
+        }
+
+        .searchbtn:hover {
+            background-color: rgb(255, 78, 78);
+            transition: all ease-in .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="search">
+        <h1>Search</h1>
+        <input type="text" class="searchtext" placeholder="Type..."><input type="submit" value="Search"
+            class="searchbtn">
+    </form>
+</body>
+
+</html>
